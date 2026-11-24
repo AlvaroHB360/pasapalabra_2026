@@ -1,0 +1,25 @@
+:root { --bg:#fbf3e0; --fg:#1f2f4d; --primary:#2f5fb3; --accent:#e0603a; --ok:#2e9e5e; --ko:#d63b3b; --yellow:#f2c94c; --muted:#6b7590; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:"Nunito",sans-serif; }
+main { min-height:100vh; display:flex; flex-direction:column; align-items:center; gap:1.5rem; padding:2rem 1rem; }
+.logo { width:56px; }
+h1 { font-family:"Bungee",sans-serif; color:var(--primary); font-size:2.6rem; margin:0; text-align:center; }
+.sub { color:var(--muted); margin:-1rem 0 0; }
+.scores { display:flex; gap:1rem; text-align:center; }
+.score { border-radius:.75rem; padding:.5rem 1rem; min-width:5.5rem; display:flex; flex-direction:column; color:#fff; }
+.score.ok { background:var(--ok); } .score.ko { background:var(--ko); } .score.tm { background:var(--yellow); color:var(--fg); }
+.score b { font-family:"Bungee",sans-serif; font-size:1.6rem; }
+.score span { font-size:.75rem; text-transform:uppercase; }
+#rosco { position:relative; width:380px; height:380px; max-width:100%; }
+.letter { position:absolute; width:2.4rem; height:2.4rem; margin:-1.2rem 0 0 -1.2rem; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:"Bungee",sans-serif; color:#fff; background:var(--primary); transition:all .3s; box-shadow:0 4px 10px -4px var(--fg); }
+.letter.ok { background:var(--ok); } .letter.ko { background:var(--ko); }
+.letter.current { transform:scale(1.25); box-shadow:0 0 0 4px var(--accent); }
+.center { position:absolute; inset:4rem; display:flex; align-items:center; justify-content:center; text-align:center; padding:.5rem; }
+.type { font-size:.75rem; text-transform:uppercase; letter-spacing:.15em; color:var(--accent); margin:0 0 .5rem; }
+.msg { font-size:.8rem; color:var(--muted); min-height:1rem; }
+.fi { font-family:"Bungee",sans-serif; font-size:1.8rem; margin:0; }
+form { display:flex; gap:.5rem; width:100%; max-width:28rem; }
+form[hidden], [hidden] { display:none !important; }
+input { flex:1; border-radius:.75rem; border:1px solid #d8ccb0; padding:.5rem .75rem; font:inherit; background:#fff; }
+.btn { border:0; border-radius:.75rem; padding:.5rem 1rem; font:inherit; font-weight:700; color:#fff; cursor:pointer; }
+.btn.primary { background:var(--primary); } .btn.accent { background:var(--accent); }

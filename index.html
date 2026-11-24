@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Rosco Valencià — Geografia</title>
+  <link rel="icon" href="img/logo.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <img src="img/logo.svg" alt="" class="logo">
+    <h1>El Rosco Valencià</h1>
+    <p class="sub">Geografia del País Valencià</p>
+    <div class="scores">
+      <div class="score ok"><b id="ok">0</b><span>Encerts</span></div>
+      <div class="score ko"><b id="ko">0</b><span>Errades</span></div>
+      <div class="score tm"><b id="time">4:00</b><span>Temps</span></div>
+    </div>
+    <div id="rosco">
+      <div class="center">
+        <div id="play"><p id="type" class="type"></p><p id="clue"></p><p id="msg" class="msg"></p></div>
+        <div id="end" hidden><p class="fi">Fi del joc!</p><p id="final"></p><button id="again" class="btn primary">Tornar a jugar</button></div>
+      </div>
+    </div>
+    <form id="form">
+      <input id="answer" autofocus placeholder="La teua resposta…" autocomplete="off">
+      <button class="btn primary">Respon</button>
+      <button type="button" id="pass" class="btn accent">Passaparaula</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
